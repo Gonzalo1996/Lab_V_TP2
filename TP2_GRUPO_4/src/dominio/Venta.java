@@ -71,10 +71,17 @@ public class Venta {
 		this.listaEntradas = listaEntradas;
 	}
 
-	
-	// toString()
 	@Override
+	public String toString() {
+		return "Datos de venta: id=" + id + ", fecha=" + fecha + "\n"+ "Datos " + cliente + "\n" + "Entrada/s compradas:" + "\n"
+				+ listaEntradas + "\n" + "Monto total: $" + monto;
+	}
+
+	// toString
+	/*
+	 	@Override
 	public String toString() {
 		return MessageFormat.format("ID venta: {0}, Fecha: {1, date}, Cliente: ({2}), Monto: {3, number, currency}.", id, fecha, cliente, monto);
 	}
+	*/
 }
