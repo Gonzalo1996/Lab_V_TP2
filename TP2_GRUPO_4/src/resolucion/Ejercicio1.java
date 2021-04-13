@@ -96,11 +96,9 @@ public class Ejercicio1 {
 		listaEntradas.add(entrada5);
 		
 		ListIterator<Entrada> it = listaEntradas.listIterator();
-		double monto = 0;
 		while(it.hasNext())
 		{
 			Entrada e = it.next();
-			monto += e.getPrecio();
 			System.out.println(e.toString());
 		}
 		
@@ -108,18 +106,10 @@ public class Ejercicio1 {
 		listaEntradas2.add(entrada);
 		listaEntradas2.add(entrada2);
 		
-		ListIterator<Entrada> it2 = listaEntradas2.listIterator();
-		double monto2 = 0;
-		while(it2.hasNext())
-		{
-			Entrada e = it2.next();
-			monto2 += e.getPrecio();
-		}
-		
 		//PUNTO 4)CREACION OBJETOS VENTAS.
 		Date fechaVta = new Date();
-		Venta vta = new Venta(fechaVta, cliente, monto, listaEntradas);	
-		Venta vta2 = new Venta(fechaVta, cliente, monto2, listaEntradas2);
+		Venta vta = new Venta(fechaVta, cliente, listaEntradas);	
+		Venta vta2 = new Venta(fechaVta, cliente, listaEntradas2);
 		
 		System.out.println("---------------------");
 		System.out.println("Punto 4: Ventas" + "\n");

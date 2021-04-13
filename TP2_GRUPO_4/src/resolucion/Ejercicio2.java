@@ -1,9 +1,7 @@
 package resolucion;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
-import java.util.ListIterator;
 import java.util.TreeSet;
 
 import dominio.Actores;
